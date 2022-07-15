@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynn.dao.AssistantUserMapper">
+    <select id="findAllUser" resultType="AssistantUser">
+        select * from assistant_user
+    </select>
+
+    <insert id="newUser" parameterType="AssistantUser" >
+        insert into assistant_user (user_name,user_phone,user_password,user_portrait)
+        values (#{user_name},#{user_phone},#{user_password},#{user_portrait})
+    </insert>
+
+    <update id="deleteUser" parameterType="String">
+        update assistant_user
+        set user_state=-1
+        where user_phone= #{user_phone}
+    </update>
+
+    <update id="cancelDeleteUser" parameterType="String">
+        update assistant_user
+        set user_state=0
+        where user_phone= #{user_phone}
+    </update>
+
+    <select id="findUser" parameterType="AssistantUser" resultType="AssistantUser">
+        select * from assistant_user
+        <where>
+            <if test="user_id != 0">
+                AND user_id = #{user_id}
+            </if>
+            <if test="user_name != null">
+                AND user_name = #{user_name}
+            </if>
+            <if test="user_phone != null">
+                AND user_phone = #{user_phone}
+            </if>
+        </where>
+        AND user_state != -1
+    </select>
+
+
+    <select id="findUserVague" parameterType="AssistantUser" resultType="AssistantUser">
+        select * from assistant_user
+        <where>
+            <if test="user_id != 0">
+                AND user_id like concat('%',#{user_id},'%')
+            </if>
+            <if test="user_name != null">
+                AND user_name like concat('%',#{user_name},'%')
+            </if>
+            <if test="user_phone != null">
+                AND user_phone like concat('%',#{user_phone},'%')
+            </if>
+        </where>
+    </select>
+
+    <update id="updateUser" parameterType="AssistantUser">
+        update assistant_user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="user_name!=null">user_name=#{user_name},</if>
+            <if test="user_phone!=null">user_phone=#{user_phone},</if>
+            <if test="user_password!=null">user_password=#{user_password},</if>
+            <if test="user_model!=null">user_model=#{user_model},</if>
+            <if test="user_portrait!=null">user_portrait=#{user_portrait},</if>
+            <if test="user_sex!=0">user_sex=#{user_sex},</if>
+            <if test="user_state!=0">user_state=#{user_state},</if>
+        </trim>
+        where user_id=#{user_id}
+    </update>
+
+    <select id="findAdmin" parameterType="String" resultType="AssistantUser">
+        select * from assistant_user where user_name = #{user_name} and user_state=1
+    </select>
+
+</mapper>

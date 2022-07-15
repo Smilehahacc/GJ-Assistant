@@ -1,0 +1,7 @@
+1.需要进入vue-assistant目录下安装项目依赖，运行：npm install
+2.安装Vuex状态管理工具：npm install vuex
+3.安装qs字符串序列号组件：npm install qs
+4.安装animate页面动画组件：npm install animate
+5.安装ElementUI页面组件库：npm i element-ui -S
+6.最后运行项目：npm run dev
+注：本项目为vue项目，运行前必须确保已安装配置nodejs环境，并安装webpack及vue脚手架工具。

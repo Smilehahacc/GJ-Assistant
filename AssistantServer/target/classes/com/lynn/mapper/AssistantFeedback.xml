@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynn.dao.AssistantFeedbackMapper">
+    <select id="getAllFeedback" resultType="AssistantFeedback">
+        select * from assistant_feedback order by (feedback_date)DESC
+    </select>
+
+    <select id="findFeedbackByModular" parameterType="String" resultType="AssistantFeedback">
+        select * from assistant_feedback where feedback_modular like concat('%',#{feedback_modular},'%') order by (feedback_date)DESC
+    </select>
+
+    <select id="findFeedbackByFrequency" parameterType="String" resultType="AssistantFeedback">
+        select * from assistant_feedback where feedback_frequency like concat('%',#{feedback_frequency},'%') order by (feedback_date)DESC
+    </select>
+
+    <insert id="newFeedback" parameterType="AssistantFeedback" >
+        insert into assistant_feedback (feedback_resume,feedback_detail,feedback_modular,feedback_frequency,feedback_date,feedback_user)
+        values (#{feedback_resume},#{feedback_detail},#{feedback_modular},#{feedback_frequency},#{feedback_date},#{feedback_user})
+    </insert>
+
+    <update id="deleteFeedback" parameterType="int">
+        update assistant_feedback
+        set feedback_state=-1
+        where feedback_id= #{feedback_id}
+    </update>
+
+    <update id="recoveryFeedback" parameterType="int">
+        update assistant_feedback
+        set feedback_state=0
+        where feedback_id= #{feedback_id}
+    </update>
+
+</mapper>

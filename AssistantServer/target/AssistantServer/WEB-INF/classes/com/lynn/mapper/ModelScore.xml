@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynn.dao.ModelScoreMapper">
+    <select id="getScore" parameterType="ModelScore" resultType="ModelScore">
+        select * from model_score where phone_id = #{phone_id} and user_id = #{user_id}
+    </select>
+
+    <select id="getModelScore" parameterType="ModelScore" resultType="ModelScore">
+        select * from model_score where phone_id = #{phone_id}
+    </select>
+
+    <insert id="newScore" parameterType="ModelScore">
+        insert into model_score (user_id,phone_id,score_appearance,score_camera,score_endurance,score_performance,score_screen)
+        values (#{user_id},#{phone_id},#{score_appearance},#{score_camera},#{score_endurance},#{score_performance},#{score_screen})
+    </insert>
+
+    <update id="modifyScore" parameterType="ModelScore">
+        update model_score
+        <trim prefix="set" suffixOverrides=",">
+            <if test="score_appearance!=0">score_appearance=#{score_appearance},</if>
+            <if test="score_camera!=0">score_camera=#{score_camera},</if>
+            <if test="score_endurance!=0">score_endurance=#{score_endurance},</if>
+            <if test="score_performance!=0">score_performance=#{score_performance},</if>
+            <if test="score_screen!=0">score_screen=#{score_screen},</if>
+        </trim>
+        where score_id= #{score_id}
+    </update>
+
+</mapper>

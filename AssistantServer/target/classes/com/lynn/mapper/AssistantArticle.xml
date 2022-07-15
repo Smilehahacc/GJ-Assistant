@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lynn.dao.AssistantArticleMapper">
+    <select id="getAllArticle" resultType="AssistantArticle">
+        select * from assistant_article where article_content != ""
+    </select>
+
+    <select id="getHeadArticle" resultType="AssistantArticle">
+        select * from assistant_article where article_content = "" limit 0,7
+    </select>
+
+    <select id="findArticleByTitle" parameterType="String" resultType="AssistantArticle">
+        select * from assistant_article where article_title like concat('%',#{article_title},'%')
+    </select>
+
+    <select id="findArticleByContent" parameterType="String" resultType="AssistantArticle">
+        select * from assistant_article where article_content like concat('%',#{article_content},'%')
+    </select>
+
+    <delete id="deleteArticle" parameterType="int">
+        delete from assistant_article where article_id = #{article_id}
+    </delete>
+</mapper>
