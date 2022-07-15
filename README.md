@@ -5,11 +5,12 @@
 2.后台（vue-backstage）   
 3.后端（AssistantServer）  
 ## 二、开发环境
-操作系统：Mac  
-JDK： jdk-8u141  
-mysql：mysql-5.7.21-1-macos10.13-x86_64  
-node：node：v14.17.3  
-IDE：IntelliJ IDEA 2018 / VSCode  
+操作系统：Windows 11  
+JDK： jdk-1.8.0_181
+MySQL：mysql-8.0.28
+Nodejs：v16.15.0  
+Tomcat：Tomcat 9.0.37  
+IDE：IntelliJ IDEA 2022 / VSCode  
 ## 三、项目文件构成
 ### 1、前台（vue-assistant）   
 vue项目
