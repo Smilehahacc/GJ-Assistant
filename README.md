@@ -4,7 +4,20 @@
 项目旨在为用户提供一个手机购买推荐平台，基于HTML5的方案也使其能够适配多种移动设备。项目前台部分为用户提供大量手机参数、购买信息等的展示，同时也提供了降价提醒、多机型横向对比、平台数据统计等实用功能。后台部分还可对平台数据进行修改、更新等，并对用户资料进行管理。
 
 ## 二、项目预览
+### 1、前台截图预览
+![image](https://user-images.githubusercontent.com/48354109/179337149-a13011ce-1c01-4ff1-9199-329e159aad52.png)
+![image](https://user-images.githubusercontent.com/48354109/179337158-26355371-eef5-471d-9e04-ae6c8af116a8.png)
+![image](https://user-images.githubusercontent.com/48354109/179337175-4acafab5-2db5-4fce-98d1-b2ca89e50406.png)
+![image](https://user-images.githubusercontent.com/48354109/179337183-4e2e6f45-5932-457f-9583-4cf9a6ba7c5c.png)
+![image](https://user-images.githubusercontent.com/48354109/179337187-14a39648-5090-4e24-ba96-8598f814aa66.png)
+![image](https://user-images.githubusercontent.com/48354109/179337190-30e72c02-d0e5-4b55-85d1-6539622a0132.png)
+![image](https://user-images.githubusercontent.com/48354109/179337198-d04607b5-1618-4a49-9d32-7449ec8527bf.png)
+![image](https://user-images.githubusercontent.com/48354109/179337201-a6a5502a-042b-414f-8851-efa81167bce7.png)
 
+
+
+
+### 2、后台截图预览
 
 ## 三、项目功能
 ### 1、机型相关功能
