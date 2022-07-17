@@ -13,7 +13,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f8d653-146a-461c-a946-58ec2b229b3a" name="Default Changelist" comment="更新文件" />
+    <list default="true" id="61f8d653-146a-461c-a946-58ec2b229b3a" name="Default Changelist" comment="更新文件">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/com/lynn/filter/SimpleCORSFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lynn/filter/SimpleCORSFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assistant/com.lynn/phoneArticle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assistant/com.lynn/phoneArticle.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -458,7 +469,7 @@
       <workItem from="1657984115354" duration="1116000" />
       <workItem from="1657985631431" duration="621000" />
       <workItem from="1657986314290" duration="3299000" />
-      <workItem from="1658027699236" duration="3385000" />
+      <workItem from="1658027699236" duration="5699000" />
     </task>
     <task id="LOCAL-00001" summary="初步结构建立">
       <created>1582028239970</created>

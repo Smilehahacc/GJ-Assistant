@@ -16,9 +16,10 @@ url = 'http://www.antutu.com'
 # 加入用户信息请求头，模拟用户请求
 header = 'User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
          'Chrome/79.0.3945.79 Safari/537.36" '
-options = webdriver.EdgeOptions()
-options.add_argument(header)
-driver = webdriver.Edge(options=options)
+options = webdriver.Edge()
+# options.add_argument(header)
+# driver = webdriver.Edge(options=options)
+driver = webdriver.Edge()
 result_output = ''
 page = 5
 
