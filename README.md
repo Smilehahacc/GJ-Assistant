@@ -6,18 +6,107 @@
 ## 二、项目预览
 ### 1、前台截图预览
 ![image](https://user-images.githubusercontent.com/48354109/179337149-a13011ce-1c01-4ff1-9199-329e159aad52.png)
+
+**新机推荐功能**
+
 ![image](https://user-images.githubusercontent.com/48354109/179337158-26355371-eef5-471d-9e04-ae6c8af116a8.png)
+
+**机型查询功能**
+
 ![image](https://user-images.githubusercontent.com/48354109/179337175-4acafab5-2db5-4fce-98d1-b2ca89e50406.png)
+
+**参数筛选功能**
+
 ![image](https://user-images.githubusercontent.com/48354109/179337183-4e2e6f45-5932-457f-9583-4cf9a6ba7c5c.png)
+
+**机型对比功能**
+
 ![image](https://user-images.githubusercontent.com/48354109/179337187-14a39648-5090-4e24-ba96-8598f814aa66.png)
+
 ![image](https://user-images.githubusercontent.com/48354109/179337190-30e72c02-d0e5-4b55-85d1-6539622a0132.png)
-![image](https://user-images.githubusercontent.com/48354109/179337198-d04607b5-1618-4a49-9d32-7449ec8527bf.png)
-![image](https://user-images.githubusercontent.com/48354109/179337201-a6a5502a-042b-414f-8851-efa81167bce7.png)
 
+**机型对比详情**
 
+![image](https://user-images.githubusercontent.com/48354109/179396339-04e3478e-4125-42af-ba26-6604f001378d.png)
 
+**降价提醒功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179385416-95f7e038-88cd-4249-a43b-810a6f789cb9.png)
+
+**机型用户评价功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396764-78c07650-708c-4f85-bc48-46a9906618dd.png)
+
+**手机资讯功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396142-de68df11-9fd9-4da6-b255-91db80c18d0a.png)
+
+**附近门店功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396152-5eded3e7-64fa-4e7b-9315-ba062e44081e.png)
+
+**站内热点功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396160-fb6b4bb0-7f24-4cc4-a4fa-c23b2d04640f.png)
+
+**手机相机排行功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396171-eca1d0ea-8e1a-4a5f-8ce7-3696ee6100a0.png)
+
+**用户登录/注册功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396181-9b66392b-4084-4a22-9c96-6b2910ea714d.png)
+
+**问题反馈功能**
 
 ### 2、后台截图预览
+![image](https://user-images.githubusercontent.com/48354109/179396186-8fdb15a4-4560-4a0b-82b4-c80c52f1cbab.png)
+
+**管理员登录功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396193-af4714c0-3df5-479c-b433-165e621c88cd.png)
+
+**机型数据管理功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396205-3ae8bf06-a168-4e63-9fe6-86ef47abdba7.png)
+
+**机型数据查看功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396198-fd28f220-e393-4b4c-a1c5-f7590eea3512.png)
+
+**机型数据更新功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396575-0850b02d-6e28-496f-93e5-3498a6e777d7.png)
+
+**文章数据查询功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396240-f62552fa-8084-4bdc-9de5-033e410fdd4b.png)
+
+**文章数据更新功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396244-4e17f828-9e5c-4ee0-9e31-e4b0b9c1c0a5.png)
+
+**用户禁言管理功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396256-ad4bbf66-3bfb-4968-b612-9a1f0ecc487c.png)
+
+**评价管理功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396269-358b8e66-ab34-4364-b229-615ae039a302.png)
+
+**站内统计功能**
+
+![image](https://user-images.githubusercontent.com/48354109/179396276-18636a59-0715-428b-ba87-3fc13f019c5c.png)
+
+**用户反馈功能（查询全部）**
+
+![image](https://user-images.githubusercontent.com/48354109/179396281-5e74a44b-6409-4bff-acab-d1cc53b64e9f.png)
+
+**用户反馈功能（按所在模块查询）**
+
+![image](https://user-images.githubusercontent.com/48354109/179396286-950f1ed7-2d29-4968-b864-e4478163d765.png)
+
+**用户反馈功能（按出现频率查询）**
 
 ## 三、项目功能
 ### 1、机型相关功能
@@ -37,7 +126,7 @@
 
 ## 四、技术栈
 ### 1、后端
-SSM + Maven + MySQL
+SSM + Maven + MySQL + Python
 ### 2、前端
 Vue2.0 + Vant2 + Element UI + Vue-Router + Vuex + Axios + Echarts + Animate.css
 ### 3、总结
@@ -56,7 +145,7 @@ Nodejs：v16.15.0
   
 Tomcat：Tomcat 9.0.37  
   
-IDE：IntelliJ IDEA 2022 / VS Code  
+IDE：IntelliJ IDEA 2022 / PyCharm 2022 / VS Code  
 
 ## 六、项目结构
 ### 1、后端（AssistantServer）  
