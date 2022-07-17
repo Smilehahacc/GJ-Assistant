@@ -3,39 +3,17 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="AssistantServer:war exploded" />
+      <artifact name="AssistantServer:war exploded" />
+      <artifact name="AssistantServer:war exploded" />
+      <artifact name="AssistantServer:war exploded" />
+      <artifact name="AssistantServer:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61f8d653-146a-461c-a946-58ec2b229b3a" name="Default Changelist" comment="更新文件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/mapper/AssistantUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/mapper/AssistantUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/mapper/ModelInfor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/mapper/ModelInfor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantFeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantFeedbackService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/AssistantUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/DxomarkScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/DxomarkScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantArticleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantArticleImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantFeedbackImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantFeedbackImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantUserImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/AssistantUserImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/DxomarkScoreImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/DxomarkScoreImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelContrastImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelContrastImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelEvaluateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelEvaluateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelInforImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelInforImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelScoreImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/Impl/ModelScoreImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelContrastService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelContrastService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelEvaluateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelEvaluateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelInforService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelInforService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelRemindService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelRemindService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelScoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lynn/service/ModelScoreService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listCategory.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/listCategory.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/com/lynn/mapper/AssistantUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/com/lynn/mapper/AssistantUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/com/lynn/mapper/ModelInfor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/AssistantServer/WEB-INF/classes/com/lynn/mapper/ModelInfor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lynn/mapper/AssistantUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lynn/mapper/AssistantUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lynn/mapper/ModelInfor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lynn/mapper/ModelInfor.xml" afterDir="false" />
-    </list>
+    <list default="true" id="61f8d653-146a-461c-a946-58ec2b229b3a" name="Default Changelist" comment="更新文件" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,9 +36,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="AssistantServer" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -70,50 +45,50 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="1ZNzW67OE8O2M4sWusrB7Ng5hQP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15384616" />
-    <property name="project.structure.side.proportion" value="0.3065268" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/系统/景景/Workspaces/IDEA/GJ Assistant/AssistantServer&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15332031&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;bd92578edc4a71188389e6d8ae18cf96&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
@@ -133,7 +108,7 @@
       <recent name="F:\作业\专业课\2020毕业设计\AssistantServer\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.37">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.16">
     <configuration name="staticTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="staticTest" />
       <module name="AssistantServer" />
@@ -181,7 +156,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.37" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.37" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 8.5.81" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.81" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="AssistantServer:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/AssistantServer" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="de7942e2-4e31-43be-af2c-121d0ed7ff77" />
+        <option name="HTTP_PORT" value="8082" />
+        <option name="JNDI_PORT" value="1098" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="59778" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="AssistantServer:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.16" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/AssistantServer" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -266,6 +315,10 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="AssistantServer:war exploded" />
+          <artifact name="AssistantServer:war exploded" />
+          <artifact name="AssistantServer:war exploded" />
+          <artifact name="AssistantServer:war exploded" />
+          <artifact name="AssistantServer:war exploded" />
         </option>
       </method>
     </configuration>
@@ -275,12 +328,12 @@
       <item itemvalue="JUnit.ConnectTest.getTopCharacter" />
       <item itemvalue="JUnit.ConnectTest.getTopCamera" />
       <item itemvalue="JUnit.ConnectTest.findUser" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.37" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.16" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.81" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ConnectTest.findUser" />
-        <item itemvalue="Application.staticTest" />
         <item itemvalue="JUnit.ConnectTest.getTopCharacter" />
         <item itemvalue="JUnit.ConnectTest.getTopCamera" />
         <item itemvalue="JUnit.ConnectTest.httpGetTest" />
@@ -395,6 +448,17 @@
       <workItem from="1657679035731" duration="617000" />
       <workItem from="1657679869375" duration="608000" />
       <workItem from="1657791190350" duration="616000" />
+      <workItem from="1657943368992" duration="7923000" />
+      <workItem from="1657951419129" duration="83000" />
+      <workItem from="1657951529842" duration="128000" />
+      <workItem from="1657951688491" duration="4033000" />
+      <workItem from="1657956065535" duration="611000" />
+      <workItem from="1657980473994" duration="740000" />
+      <workItem from="1657981512249" duration="2510000" />
+      <workItem from="1657984115354" duration="1116000" />
+      <workItem from="1657985631431" duration="621000" />
+      <workItem from="1657986314290" duration="3299000" />
+      <workItem from="1658027699236" duration="3385000" />
     </task>
     <task id="LOCAL-00001" summary="初步结构建立">
       <created>1582028239970</created>
@@ -491,6 +555,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/AssistantServer" />
+    </ignored-roots>
     <MESSAGE value="初步结构建立" />
     <MESSAGE value="结构建立" />
     <MESSAGE value="完成基本的18个数据接口，机型参数接口未完成" />
@@ -518,6 +586,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="masterDetails">
     <states>
