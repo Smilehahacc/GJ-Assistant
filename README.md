@@ -39,23 +39,23 @@
 
 **手机资讯功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396142-de68df11-9fd9-4da6-b255-91db80c18d0a.png)
+![image](https://user-images.githubusercontent.com/48354109/179397489-bec37f4b-0e0f-4394-a3cd-c4502f94f4d8.png)
 
 **附近门店功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396152-5eded3e7-64fa-4e7b-9315-ba062e44081e.png)
+![image](https://user-images.githubusercontent.com/48354109/179396142-de68df11-9fd9-4da6-b255-91db80c18d0a.png)
 
 **站内热点功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396160-fb6b4bb0-7f24-4cc4-a4fa-c23b2d04640f.png)
+![image](https://user-images.githubusercontent.com/48354109/179396152-5eded3e7-64fa-4e7b-9315-ba062e44081e.png)
 
 **手机相机排行功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396171-eca1d0ea-8e1a-4a5f-8ce7-3696ee6100a0.png)
+![image](https://user-images.githubusercontent.com/48354109/179396160-fb6b4bb0-7f24-4cc4-a4fa-c23b2d04640f.png)
 
 **用户登录/注册功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396181-9b66392b-4084-4a22-9c96-6b2910ea714d.png)
+![image](https://user-images.githubusercontent.com/48354109/179396171-eca1d0ea-8e1a-4a5f-8ce7-3696ee6100a0.png)
 
 **问题反馈功能**
 
@@ -64,15 +64,15 @@
 
 **管理员登录功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396193-af4714c0-3df5-479c-b433-165e621c88cd.png)
+![image](https://user-images.githubusercontent.com/48354109/179397546-a794ee02-a645-4ff0-98fa-03cea5f1e5ee.png)
 
 **机型数据管理功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396205-3ae8bf06-a168-4e63-9fe6-86ef47abdba7.png)
+![image](https://user-images.githubusercontent.com/48354109/179397552-17ff615b-f69c-43c9-b549-b65e1aa484f5.png)
 
 **机型数据查看功能**
 
-![image](https://user-images.githubusercontent.com/48354109/179396198-fd28f220-e393-4b4c-a1c5-f7590eea3512.png)
+![image](https://user-images.githubusercontent.com/48354109/179397557-3fe09a57-cb78-49cc-8516-dc6e0298e631.png)
 
 **机型数据更新功能**
 
@@ -90,7 +90,7 @@
 
 ![image](https://user-images.githubusercontent.com/48354109/179396256-ad4bbf66-3bfb-4968-b612-9a1f0ecc487c.png)
 
-**评价管理功能**
+**用户评论管理功能**
 
 ![image](https://user-images.githubusercontent.com/48354109/179396269-358b8e66-ab34-4364-b229-615ae039a302.png)
 
@@ -169,17 +169,6 @@ git clone git@github.com:Smilehahacc/GJ-Assistant.git
 ### 4、xxx
 
 ### 5、xxx
-
-
-
-
-
-
-
-
-
-
-
 
 
 
