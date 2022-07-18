@@ -168,21 +168,52 @@ Python项目，使用PyCharm进行编写。本项目涉及大量手机机型数�
 
 ## 七、下载运行
 ### 1、下载项目到本地
-```
+```bash
 # 运行下面的代码，将项目克隆到本地仓库
 git clone git@github.com:Smilehahacc/GJ-Assistant.git
 ```
 
 ### 2、修改配置文件
-1）创建数据库 将 'GJ Assistant\AssistantServer' 文件夹中的 'assistant.sql' 文件导入数据库。
+1）创建数据库 将 `GJ Assistant\AssistantServer` 文件夹中的 `assistant.sql `文件导入数据库。
 
-### 3、xxx
+2）修改用户名密码
+修改 `AssistantServer\src\main\resources\log4j.properties` 文件里的 `name` 和 `password`。
 
-### 4、xxx
+### 3、启动项目
+- **启动服务端**：
+该项目为SSM项目，在IDEA中配置Tomcat即可运行。
 
-### 5、xxx
+- **启动客户端前台**：进入 vue-assistant 目录，运行下面命令
+```js
+npm install // 安装依赖
 
+npm install vuex // 安装Vuex状态管理工具
 
+npm install qs // 安装qs字符串序列号组件
+
+npm install animate.css // 安装animate页面动画组件
+
+npm i vant@latest-v2 // 安装Vant移动端UI组件库
+
+npm install echarts --save // 安装ECharts图表插件
+
+npm run dev // 启动前台项目
+```
+
+- **启动客户端后台**：进入 vue-backstage 目录，运行下面命令
+```js
+npm install // 安装依赖
+
+npm install vuex // 安装Vuex状态管理工具
+
+npm install qs // 安装qs字符串序列号组件
+
+npm install animate.css // 安装animate页面动画组件
+
+npm i element-ui -S // 安装ElementUI页面组件库
+
+npm run dev // 启动后台项目
+```
 
 
 
