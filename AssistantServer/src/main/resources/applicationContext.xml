@@ -21,11 +21,6 @@
 
 	<!--添加数据库的相关配置，配置数据源，对应的druid连接池-->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-<!--	  <property name="driverClassName">-->
-<!--	      <value>com.mysql.cj.jdbc.Driver</value>-->
-<!--	  </property>-->
-<!--	  <property name="url"-->
-<!--				value="jdbc:mysql://localhost:3306/assistant?characterEncoding=UTF-8&amp;useSSL=false&amp;serverTimezone=UTC&amp;serverTimezone=GMT%2B8&amp;allowPublicKeyRetrieval=true"/>-->
 		<property name="driverClassName" value="${driverClassName}"/>
 		<property name="url" value="${url}"/>
 		<property name="username" value="${name}"/>
