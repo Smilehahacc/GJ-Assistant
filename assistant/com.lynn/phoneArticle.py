@@ -6,8 +6,8 @@ from selenium import webdriver
 # from sqlalchemy import null
 
 
-# server = '192.168.31.118'
-server = '172.18.16.1'
+server = '192.168.31.118'
+# server = '172.18.16.1'
 user = 'root'
 password = 'root'
 database = 'assistant'
@@ -156,6 +156,6 @@ def main():
         return result_output
 
 
-# 包含功能，1.获取安兔兔头部轮播图文章 2.获取安兔兔手机圈文章
+# 包含功能，1.获取安兔兔头部轮播图文章 2.获取安兔兔手机圈文章（直接运行主函数即可）
 if __name__ == '__main__':
     main()

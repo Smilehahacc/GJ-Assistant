@@ -6,7 +6,7 @@ from selenium import webdriver
 
 from bs4 import BeautifulSoup
 
-server = '116.62.45.163'
+server = '192.168.31.118'
 user = 'root'
 password = 'root'
 database = 'assistant'
@@ -20,9 +20,9 @@ result_output = ''
 # 加入用户信息请求头，模拟用户请求
 header = 'User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
          'Chrome/79.0.3945.79 Safari/537.36" '
-options = webdriver.ChromeOptions()
-options.add_argument(header)
-driver = webdriver.Chrome(options=options)
+options = webdriver.Edge()
+# options.add_argument(header)
+driver = webdriver.Edge()
 
 
 def get_data():
@@ -153,6 +153,6 @@ def main():
         return result_output
 
 
-# 包含功能，1.从相关站点获取在售机型 2.存储机型到数据库 3.获取机型价格和图片
+# 包含功能，1.从相关站点获取在售机型 2.存储机型到数据库 3.获取机型价格和图片（在主函数中依次运行123步骤）
 if __name__ == '__main__':
     main()

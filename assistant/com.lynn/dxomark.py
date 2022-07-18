@@ -6,51 +6,53 @@ from selenium import webdriver
 
 from bs4 import BeautifulSoup
 
-server = '116.62.45.163'
+server = '192.168.31.118'
 user = 'root'
 password = 'root'
 database = 'assistant'
 db = pymysql.connect(server, user, password, database)
 cursor = db.cursor()
-url = 'https://www.dxomark.com/category/smartphone-reviews'
+url = 'https://www.dxomark.com/smartphones/#sort-camera/device'
 page = 1
 result_output = ''
 
 # 加入用户信息请求头，模拟用户请求
 header = 'User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
          'Chrome/79.0.3945.79 Safari/537.36" '
-options = webdriver.ChromeOptions()
-options.add_argument(header)
-driver = webdriver.Chrome(options=options)
+options = webdriver.Edge()
+driver = webdriver.Edge()
 result_output = ''
 
 
-def getDxoMark():
+def get_dxo_mark():
     global result_output
     print('开始获取DxoMark智能手机相机排行...')
     result_output += '开始获取DxoMark智能手机相机排行...'
-    contents = requests.request('POST', url).text
-    soup = BeautifulSoup(contents, "html.parser")
+    # contents = requests.request('POST', url).text
+    # soup = BeautifulSoup(contents, "html.parser")
+    # 解析动态html
+    soup = BeautifulSoup(get_html(url), "html.parser")
     # 将所有的设备分数标签找出来
-    result = soup.find_all('div', class_='listElement')
+    result = soup.find_all('div', class_='row device-row')
     ergodic_element(result)
 
 
 def ergodic_element(result):
     global result_output
     for tag in result:
+        print(tag)
         if tag.find('div', class_='deviceName sensor') is not None:
             phone_model = tag.find('div', class_='deviceName sensor').find('a').get_text()
             print('设备名' + phone_model)
-            score_camera = getScore(tag.find('div', class_='listElementScoreColumn mobile'))
-            score_selfie = getScore(tag.find('div', class_='listElementScoreColumn selfie'))
-            score_audio = getScore(tag.find('div', class_='listElementScoreColumn audio'))
+            score_camera = get_score(tag.find('div', class_='listElementScoreColumn mobile'))
+            score_selfie = get_score(tag.find('div', class_='listElementScoreColumn selfie'))
+            score_audio = get_score(tag.find('div', class_='listElementScoreColumn audio'))
             print('相机得分：' + str(score_camera) + ' 自拍得分：' + str(score_selfie) + ' 音频得分：' + str(score_audio))
             result_output += '相机得分：' + str(score_camera) + ' 自拍得分：' + str(score_selfie) + ' 音频得分：' + str(score_audio)
-            insert_score(phone_model, score_camera, score_selfie, score_audio)
+            # insert_score(phone_model, score_camera, score_selfie, score_audio)
 
 
-def getScore(tag):
+def get_score(tag):
     score_div = tag.find('div', class_='deviceScore')
     if score_div is not None:
         score_this = re.sub('\r|\n', '', score_div.get_text().replace(' ', ''))
@@ -81,6 +83,12 @@ def insert_score(phone_model, score_camera, score_selfie, score_audio):
         cursor.connection.commit()
 
 
+# 解析动态加载页面
+def get_html(local_url):
+    driver.get(local_url)
+    return driver.page_source
+
+
 def get_date():
     t = time.time()
     return int(t)
@@ -89,7 +97,7 @@ def get_date():
 def main():
     global result_output
     try:
-        getDxoMark()
+        get_dxo_mark()
         result_output += 'DXO数据更新完毕！<br/>'
         return result_output
     finally:
@@ -97,6 +105,6 @@ def main():
         return result_output
 
 
-# 包含功能，1.
+# 包含功能，1.获取DxoMark手机相机排行榜单内容
 if __name__ == '__main__':
     main()
