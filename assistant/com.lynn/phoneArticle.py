@@ -5,8 +5,9 @@ import re
 from selenium import webdriver
 # from sqlalchemy import null
 
-# server = '116.62.45.163'
-server = '192.168.31.118'
+
+# server = '192.168.31.118'
+server = '172.18.16.1'
 user = 'root'
 password = 'root'
 database = 'assistant'

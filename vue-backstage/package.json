@@ -1,7 +1,7 @@
 {
   "name": "vue-backstage",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "GJ-Assistant购机助手移动端app（H5项目） 后台",
   "author": "Lynn",
   "private": true,
   "scripts": {

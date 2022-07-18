@@ -1,7 +1,7 @@
 {
   "name": "vue-assistant",
   "version": "1.0.0",
-  "description": "GJ Assistant购机助手app",
+  "description": "GJ-Assistant购机助手移动端app（H5项目） 前台",
   "author": "Lynn",
   "private": true,
   "scripts": {
