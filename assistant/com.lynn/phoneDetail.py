@@ -9,7 +9,8 @@ import pymysql
 import re
 import time
 
-server = '116.62.45.163'
+# server = '192.168.31.118'
+server = '172.18.16.1'
 user = 'root'
 password = 'root'
 database = 'assistant'
@@ -17,11 +18,13 @@ db = pymysql.connect(server, user, password, database)
 cursor = db.cursor()
 
 # 加入用户信息请求头，模拟用户请求
-header = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 ' \
-         'Safari/537.36 '
-options = webdriver.ChromeOptions()
-options.add_argument(header)
-driver = webdriver.Chrome(options=options)
+header = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+         'Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62'
+# options = webdriver.ChromeOptions()
+# options.add_argument(header)
+# driver = webdriver.Chrome(options=options)
+options = webdriver.Edge()
+driver = webdriver.Edge()
 # 设定要调用的浏览器驱动
 # driver = webdriver.Chrome()
 url = 'https://m.baidu.com/sf?pd=product_card&openapi=1&dspName=iphone&from_sf=1&new_need_di=1&resource_id=4530&ie' \
@@ -37,6 +40,8 @@ parameter_specific = ['', '', '', '', '', '', '', '']
 # 对应10项参数类型的值（重要参数main，基本参数basic，屏幕screen，硬件hardware
 # ，网络与连接network, 摄像头camera, 外观appearance, 功能与服务service, 手机附件enclosure, 保修信息guarantee）
 parameter_overview = ['', '', '', '', '', '', '', '', '', '']
+# 需要更新的机型数据数量
+data_count = 5
 
 
 # 从数据库中获取要爬取的机型
@@ -45,10 +50,11 @@ def get_model_list():
     cursor.execute(sql)
     model_list = cursor.fetchall()
     # 控制爬取与存入数据库的数量
-    for count in range(0, 66):
+    for count in range(0, data_count):
         print('正在更新第' + str(count + 1) + '条机型数据...')
         get_detail(model_list[count][0])
         clean_parameter()
+        driver.close()
 
 
 # 参数情况，意外情况不出现重复
@@ -172,9 +178,10 @@ def get_detail(phone_model):
 
 # 解析动态加载页面
 def get_html(local_url):
-    o = webdriver.ChromeOptions()
-    o.add_argument('-headless')
-    d = webdriver.Chrome(options=options)
+    # o = webdriver.ChromeOptions()
+    # o.add_argument('-headless')
+    # d = webdriver.Chrome(options=options)
+    d = webdriver.Edge()
     d.get(local_url)
     return d.page_source
 
@@ -195,12 +202,14 @@ def get_parameter_manual(phone_model):
 def main():
     # 尝试获取数据
     try:
-        # get_model_list()
-        get_parameter_manual('荣耀X10')
+        # 1.从数据库更新机型数据
+        get_model_list()
+        # 2.手动爬取获取失败的机型数据
+        # get_parameter_manual('苹果iPhone13')
     finally:
         print('完成所有机型数据获取与保存！')
 
 
-# 包含功能，1.从数据库更新机型数据 2.挨个遍历，调用浏览器自动化爬取详细机型参数并存入数据库
+# 包含功能，1.从数据库更新机型数据 2.挨个遍历，调用浏览器自动化爬取详细机型参数并存入数据库（直接执行主函数即可）
 if __name__ == '__main__':
     main()

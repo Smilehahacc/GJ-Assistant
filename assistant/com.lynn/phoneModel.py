@@ -6,7 +6,8 @@ from selenium import webdriver
 
 from bs4 import BeautifulSoup
 
-server = '192.168.31.118'
+# server = '192.168.31.118'
+server = '172.18.16.1'
 user = 'root'
 password = 'root'
 database = 'assistant'
@@ -14,12 +15,12 @@ db = pymysql.connect(server, user, password, database)
 cursor = db.cursor()
 url = 'https://product.pconline.com.cn/multi/mobile' \
       '/22586_44299_37376_39474_47505_99210_47071_97992_99063_22587_98649_98337_24390_23285_32569_110524_92002/'
-page = 10
+page = 5
 result_output = ''
 
 # 加入用户信息请求头，模拟用户请求
-header = 'User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
-         'Chrome/79.0.3945.79 Safari/537.36" '
+header = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+         'Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62'
 options = webdriver.Edge()
 # options.add_argument(header)
 driver = webdriver.Edge()
@@ -44,12 +45,13 @@ def get_data():
         result_output += '第' + str(count + 1) + '页数据存入数据库成功！<br/>'
 
 
-# 将查询到的信息插入表
+# 将查询到的机型信息插入表
 def insert_phone(model):
     sql = 'select * from assistant_phone where phone_model = %s'
     cursor.execute(sql, str(model))
     result = cursor.fetchall()
-    if result is None:
+    # 若爬取到的数据为新数据，则插入表
+    if len(result) == 0:
         sql = 'insert into assistant_phone(phone_model) VALUES(%s)'
         cursor.execute(sql, str(model))
 
@@ -93,7 +95,7 @@ def get_price():
                     try:
                         price_value = price_div.find('a').get_text().replace('￥', '')
                         output_str += model_value + '：￥' + price_value
-                        # buy_link = getBuyLink(tag)
+                        # buy_link = get_buy_link(tag)
                         # sql = 'update model_infor set infor_price=%s, update_date=%s, infor_buy_link=%s ' \
                         #       'where phone_model=%s'
                         # cursor.execute(sql, (price_value, get_date(), buy_link, model_value))
@@ -110,7 +112,7 @@ def get_price():
         result_output += '第' + str(count + 1) + '页价格、购买链接和图片数据存入完成！<br/>'
 
 
-def getBuyLink(tag):
+def get_buy_link(tag):
     buy_link1 = tag.find('a', class_='xs1 buyLink')
     buy_link2 = tag.find('a', class_='xs2 buyLink')
     if buy_link2 is not None:
@@ -125,7 +127,7 @@ def get_img(img_url, model_value):
     try:
         r = requests.get('http:' + img_url)
         img_name = model_value + '.png'
-        filename = 'F:\\作业\\专业课\\2020毕业设计\\vue-assistant\\src\\assets\\img\\mobile\\' + img_name
+        filename = '..\\..\\vue-assistant\\src\\assets\\img\\mobile\\' + img_name
         with open(filename, "wb") as f:
             f.write(r.content)
         print(model_value + '--机型图片下载完成！')
@@ -142,17 +144,19 @@ def get_date():
 def main():
     global result_output
     try:
-        # get_data()
+        # 依次执行以下方法
+        get_data()
         insert_model()
-        # get_price()
+        get_price()
         print('所有数据更新完毕！')
         result_output += '所有数据更新完毕！<br/>'
+        driver.quit()
     finally:
         # db.close()
         print('一次更新完成')
         return result_output
 
 
-# 包含功能，1.从相关站点获取在售机型 2.存储机型到数据库 3.获取机型价格和图片（在主函数中依次运行123步骤）
+# 包含功能，1.从相关站点获取在售机型 2.存储机型名称至数据库 3.获取机型价格和图片（在主函数中依次执行123步骤）
 if __name__ == '__main__':
     main()

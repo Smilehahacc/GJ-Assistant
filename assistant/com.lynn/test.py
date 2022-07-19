@@ -2,8 +2,8 @@ import requests
 from selenium import webdriver
 
 # 加入用户信息请求头，模拟用户请求
-header = 'User-Agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
-         'Chrome/79.0.3945.79 Safari/537.36" '
+header = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
+         'Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62'
 options = webdriver.ChromeOptions()
 options.add_argument(header)
 driver = webdriver.Chrome(options=options)

@@ -6,8 +6,8 @@ from selenium import webdriver
 # from sqlalchemy import null
 
 
-server = '192.168.31.118'
-# server = '172.18.16.1'
+# server = '192.168.31.118'
+server = '172.18.16.1'
 user = 'root'
 password = 'root'
 database = 'assistant'
@@ -133,7 +133,7 @@ def get_html(local_url):
 
 
 # 清除文章数据库缓存
-def cleanArticle():
+def clean_article():
     try:
         cursor.execute('truncate table assistant_article  ')
     finally:
@@ -143,7 +143,7 @@ def cleanArticle():
 def main():
     global result_output
     try:
-        cleanArticle()
+        clean_article()
         for count in range(0, page):
             print('现在爬取第' + str(count + 1) + '页的文章内容...')
             result_output += '现在爬取第' + str(count + 1) + '页的文章内容...<br/>'
@@ -151,6 +151,8 @@ def main():
         get_head_article(url)
         print('所有文章爬取完成！')
         result_output += '<br/>所有文章爬取完成！'
+        # driver.close()
+        driver.quit()
     finally:
         # db.close()
         return result_output
