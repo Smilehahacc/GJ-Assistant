@@ -135,7 +135,9 @@ Vue2.0 + Vant2 + Element UI + Vue-Router + Vuex + Axios + Echarts + Animate.css
 
 ### 3、总结
 1）数据源：使用Python进行爬取，并存储在MySQL数据库中。  
+
 2）后端：采用SSM框架进行搭建，通过Maven对项目依赖进行管理，整个项目使用Github进行版本管理。  
+
 3）前端：前台部分使用基于Vue.js的Vant移动端框架，后台使用Element UI框架，实现前后端分离。
 
 ## 五、开发环境
@@ -174,10 +176,9 @@ git clone git@github.com:Smilehahacc/GJ-Assistant.git
 ```
 
 ### 2、修改配置文件
-1）创建数据库 将 `GJ Assistant\AssistantServer` 文件夹中的 `assistant.sql `文件导入数据库。
+1）创建数据库：将 `GJ Assistant\AssistantServer` 文件夹中的 `assistant.sql `文件导入数据库。
 
-2）修改用户名密码
-修改 `AssistantServer\src\main\resources\log4j.properties` 文件里的 `name` 和 `password`。
+2）修改用户名密码：修改 `AssistantServer\src\main\resources\log4j.properties` 文件里的 `name` 和 `password`。
 
 ### 3、启动项目
 - **启动服务端**：
