@@ -5,7 +5,7 @@
 
 ## 二、项目预览
 ### 1、前台截图预览
-![image](https://user-images.githubusercontent.com/48354109/179337149-a13011ce-1c01-4ff1-9199-329e159aad52.png)
+![image](https://user-images.githubusercontent.com/48354109/179758955-7c9bc59a-0925-4118-8f03-03b7ffa407e7.png)
 
 **新机推荐功能**
 

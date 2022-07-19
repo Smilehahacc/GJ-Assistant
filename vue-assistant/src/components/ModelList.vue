@@ -19,7 +19,7 @@
                   <p>处理器：{{ modelList.infor_cpu }}&nbsp;&nbsp;&nbsp;电池：{{ modelList.infor_battery }}mAh</p>
                 </div>
                 <div class="model-detial2">
-                  <p>屏幕：{{ modelList.infor_screen_siFze }}英寸&nbsp;{{ modelList.infor_resolving_power }}</p>
+                  <p>屏幕：{{ modelList.infor_screen_size }}英寸&nbsp;{{ modelList.infor_resolving_power }}</p>
                 </div>
               </div>
             </div>
